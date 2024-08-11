@@ -59,8 +59,24 @@ pip install networkx matplotlib
     is_removable = ICRSA(G, M)
     print(is_removable)
     ```
-
-3. **Visualize Graph**:
+3. **Check T-Removability**:
+    ```python
+    from your_script import ICRSA
+    
+    G = {
+        'r1': {'m1': 'a', 'm2': 'b'},
+        'r2': {'m1': 'c', 'm2': 'd', 'm3': 'e', 'r3': 'j'},
+        'r3': {'m2': 'f'},
+        'm1': {'m3': 'g'},
+        'm2': {'m3': 'h'},
+        'm3': {}
+    }
+    M = ['m1', 'm2', 'm3']
+    
+    is_removable = ITRSA(G, M)
+    print(is_removable)
+    ```
+4. **Visualize Graph**:
     ```python
     from your_script import plot_result
     
