@@ -2,7 +2,7 @@ Here's a README file for your code:
 
 ---
 
-# Random DAG Generation and Conditional Removability Check
+# Inducing Paths and  Removability Check in DAGs
 
 ## Overview
 
